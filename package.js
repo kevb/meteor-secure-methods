@@ -1,5 +1,5 @@
 Package.describe({
-  name: 'kevb:secure-methods',
+  name: 'kevbuk:secure-methods',
   summary: 'Secure meteor methods - a middleware approach',
   version: '0.0.1',
   git: 'https://github.com/kevb/meteor-secure-methods.git'
@@ -15,6 +15,6 @@ Package.onUse(function(api) {
 Package.onTest(function(api) {
   api.use('tinytest');
   api.use('ecmascript');
-  api.use('kevb:secure-methods');
+  api.use('kevbuk:secure-methods');
   api.mainModule('secure-methods.test.js', 'server');
 });
