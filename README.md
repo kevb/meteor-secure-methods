@@ -12,7 +12,7 @@ SecureMethod forces you to define methods as either secure or insecure, and secu
 ## Install
 
 ```
-meteor install secure-methods
+meteor install kevb:secure-methods
 ```
 
 ## Run tests
