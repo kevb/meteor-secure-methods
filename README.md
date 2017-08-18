@@ -63,3 +63,17 @@ SecureMethods.attachSecureHandlers({
   create-reservation: ["can-create-reservation"]
 })
 ```
+
+### Calling methods
+
+Secure methods are called in the exact same way as Meteor.methods. Just note that the single object (destructured) pattern is strongly recommended.
+
+```
+Meteor.call(create-reservation, {reservation}, (err, res) => {
+  if (err) {
+    // error!
+  } else {
+    // success!
+  }
+})
+```
